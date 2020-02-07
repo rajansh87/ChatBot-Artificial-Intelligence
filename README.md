@@ -12,13 +12,13 @@ A fully working ChatBot made in Python3 as my Artificial Intelligence Lab Projec
 
 
 
-###Simple Reflex
+### Simple Reflex
 
-######Simple reflex agents ignore the rest of the percept history and act only on the basis of the current percept. Percept history is the history of all that an agent has perceived till date. 
-######The agent function is based on the condition-action rule. A condition-action rule is a rule that maps a state i.e, condition to an action. If the condition is true, then the action is taken, else not.
-######This agent function only succeeds when the environment is fully observable. 
-######For simple reflex agents operating in partially observable environments, infinite loops are often unavoidable. 
-######It may be possible to escape from infinite loops if the agent can randomize its actions. Problems with Simple reflex agents are :
+###### Simple reflex agents ignore the rest of the percept history and act only on the basis of the current percept. Percept history is the history of all that an agent has perceived till date. 
+###### The agent function is based on the condition-action rule. A condition-action rule is a rule that maps a state i.e, condition to an action. If the condition is true, then the action is taken, else not.
+###### This agent function only succeeds when the environment is fully observable. 
+###### For simple reflex agents operating in partially observable environments, infinite loops are often unavoidable. 
+###### It may be possible to escape from infinite loops if the agent can randomize its actions. Problems with Simple reflex agents are :
 
 ![](https://www.geeksforgeeks.org/wp-content/uploads/ai3-1.png)
 - Very limited intelligence.
@@ -31,28 +31,28 @@ A fully working ChatBot made in Python3 as my Artificial Intelligence Lab Projec
 - Python 3.
 - utils
 
-###Python Idle Code
+### Python Idle Code
 
 
-####Install 
+#### Install 
 `pip install utils`
  
  
- ###Imports
+ ### Imports
 ``` 
 from utils import *
 import random, copy
 from datetime import datetime
 ```
 Indented 8 spaces
-####Object Class
+#### Object Class
     def __repr__(self):
 		return '<%s>' % getattr(self, '__name__', self.__class__.__name__)
 
 	def is_alive(self):
 		return hasattr(self, 'alive') and self.alive
 
-####Reflex Agent
+#### Reflex Agent
 def __init__(self):
 
         Agent.__init__(self)
@@ -86,7 +86,7 @@ def __init__(self):
 			self.program = program
 
 
-###Table Driven 
+### Table Driven 
 	def TableDrivenVacuumAgent():
 		table = {((query, 'hello'),):'hi',
 				 ((query, 'how are you'),):'I m fine',
@@ -101,7 +101,7 @@ def __init__(self):
 				 ((query, 'what about my product price of product'),):'Fetching',
 				 }
 		return TableDrivenAgent(table)
-###Table Driven 
+### Table Driven 
 	def __init__(self,):
 			self.objects = []; self.agents = []
 			object_classes = [] ## List of classes that can go into environment
@@ -110,23 +110,17 @@ def __init__(self):
 			query=input("write your query ")
 			return self.execute_action(agent,query)
 
-###Main Function
+### Main Function
 	if __name__=="__main__":
     	e1=Environment()
     	ragent=ReflexVacuumAgent()
      	while(1):
         	e1.percept(ragent)
     
-
-
-
 		def execute_action(self, agent, action):
-			#  "Change the world to reflect this action. Override this."
-			#action="dd"
-			#print(action)
 			return print("ChatBot:",agent.program(action))
 			#abstract
 
 
 
-###End
+### End
