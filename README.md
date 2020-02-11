@@ -9,6 +9,7 @@ A fully working ChatBot made in Python3 as my Artificial Intelligence Lab Projec
 - Query Solving Ability.
 - Can be converted to Table Driven Agent too.
 - Created in Python 3.7.3.
+- GUI (ChatBot 2.0.py)
 
 
 
