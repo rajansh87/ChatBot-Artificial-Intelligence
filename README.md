@@ -44,6 +44,8 @@ A fully working ChatBot made in Python3 as my Artificial Intelligence Lab Projec
 from utils import *
 import random, copy
 from datetime import datetime
+from tkinter import *
+
 ```
 Indented 8 spaces
 #### Object Class
