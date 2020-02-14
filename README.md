@@ -1,5 +1,5 @@
 # ChatBot-Artificial-Intelligence
-A fully working ChatBot made in Python3 as my Artificial Intelligence Lab Project.
+A completely working ChatBot made in Python3 as my Artificial Intelligence Lab Project.
 ### Project Features 
 
 - A Simple Reflex Agent Artificial Intelligence Model.
